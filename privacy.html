@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy — Trap Box</title>
-<meta name="description" content="Trap Box privacy policy: no accounts, on-device progress, and how Google AdMob ads and consent work.">
+<meta name="description" content="Trap Box privacy policy: no accounts, on-device progress, Google AdMob ads, Firebase Analytics and Crashlytics, and consent.">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,11 +31,12 @@
 
   <main>
     <h2>Privacy Policy</h2>
-    <p class="tag">Last updated: 24 October 2026</p>
+    <p class="tag">Last updated: 27 October 2026</p>
 
     <p>
       Trap Box ("the app", <code>uk.co.motomod.trapbox</code>) is a game.
-      This page explains what happens to your data when you play it.
+      This page explains what data the app handles, who handles it and
+      what choices you have.
     </p>
 
     <h2>No accounts</h2>
@@ -47,13 +48,15 @@
 
     <h2>Your progress stays on your device</h2>
     <p>
-      Level progress, star ratings, best scores, and your sound/vibration
-      settings are stored only on your device, using the device's local
-      app storage. None of this is sent to the developer, to any server,
-      or to any third party. Uninstalling the app removes it.
+      Level progress, star ratings, best scores, and your sound, vibration
+      and theme settings are stored only on your device, using the
+      device's local app storage. None of this saved progress is sent to
+      the developer, to any server, or to any third party. Uninstalling the
+      app removes it. The gameplay events described under Analytics below
+      are separate.
     </p>
 
-    <h2>Advertising</h2>
+    <h2>Advertising (Google AdMob)</h2>
     <p>
       Trap Box is free to play and shows ads between levels, and offers an
       optional ad you can watch to continue after a loss. Ads are served by
@@ -71,6 +74,48 @@
       and <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">how Google uses data from apps that use AdMob</a>.
     </p>
 
+    <h2>Analytics (Google Analytics for Firebase)</h2>
+    <p>
+      The app uses Google Analytics for Firebase to understand how the game
+      is played, for example which levels are hardest and how often the
+      optional ads are watched. It records these gameplay events: a level
+      starting (and whether it's a retry), a level being cleared (with the
+      stars earned and how much of the board you claimed), a level being
+      lost (whether you ran out of lives or time, and how much you
+      claimed), whether you used a continue on that attempt, and whether
+      an optional "watch ad to continue" ad was watched to the end or
+      skipped.
+    </p>
+    <p>
+      Firebase also collects some information automatically, including an
+      app-instance identifier, your device model and operating system
+      version, your approximate location (country or region) and usage data
+      such as sessions and time in the app. This data isn't linked to your
+      name or any account.
+    </p>
+
+    <h2>Crash reports (Firebase Crashlytics)</h2>
+    <p>
+      If the app crashes or hits an unexpected error, Firebase Crashlytics
+      sends a crash report so the problem can be fixed. A report includes
+      technical details such as the stack trace, your device model and
+      operating system version, the device's state at the time (for example
+      free memory and orientation) and a Crashlytics installation identifier.
+    </p>
+
+    <h2>Remote settings (Firebase Remote Config)</h2>
+    <p>
+      The app uses Firebase Remote Config to fetch a few game settings, such
+      as which ads are shown and how often the ad between levels appears,
+      so they can be adjusted without an update. Fetching them uses a
+      Firebase installation identifier.
+    </p>
+    <p>
+      Firebase services are provided by Google. See
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Privacy and Security in Firebase</a>
+      for how Google processes this data.
+    </p>
+
     <h2>Consent (UK / EEA)</h2>
     <p>
       For users in the UK and the European Economic Area, Trap Box shows a
@@ -85,10 +130,13 @@
       whenever it's available.
     </p>
 
-    <h2>No data sold</h2>
+    <h2>Who handles your data</h2>
     <p>
-      The developer does not sell any data. The developer does not collect
-      any data of its own to sell in the first place.
+      The data described above is collected and processed by Google, as the
+      provider of AdMob and Firebase. The developer can see the analytics
+      and crash reports in the Firebase console, to improve the game, but
+      never sees the data Google's ad SDK collects. The developer never
+      receives your name or email address and does not sell any data.
     </p>
 
     <h2>Children</h2>
